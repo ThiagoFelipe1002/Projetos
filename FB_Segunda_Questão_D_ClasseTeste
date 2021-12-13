@@ -1,0 +1,42 @@
+package Segunda_Questao;
+public class Teste {
+    public static void main(String[] args) {
+        Transporte tr1 = new Transporte();
+        Automovel au1 = new Automovel();
+        Avião av1 = new Avião();
+
+        tr1.marca = "Mercedes";
+        tr1.modelo = "Ônibus";
+        tr1.quilometragem = 50;
+        tr1.capacidadeTanque = 10;
+        tr1.abastecer(200);
+        tr1.moverSe(100);
+        tr1.abastecer(50);
+        tr1.moverSe(200);
+        tr1.exibir();
+
+        System.out.println("________________________________");
+
+        au1.marca = "Honda";
+        au1.modelo = "CR-V";
+        au1.quilometragem = 20000;
+        au1.capacidadeTanque = 5;
+        au1.setPlaca("PNX-4578");
+        au1.abastecer(2);
+        au1.moverSe(55);
+        au1.exibir();
+
+        System.out.println("________________________________");
+
+        av1.marca = "Airbus";
+        av1.modelo = "A350";
+        av1.quilometragem = 200000;
+        av1.capacidadeTanque = 2000;
+        av1.setCodigo("30785");
+        av1.abastecer(10000);
+        av1.moverSe(3000);
+        av1.moverSe(8);
+        av1.moverSe(16);
+        av1.exibir();
+    }
+}
