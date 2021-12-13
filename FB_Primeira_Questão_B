@@ -1,0 +1,37 @@
+package Primeira_Questão;
+public class Professor extends Funcionario {
+    int disciplinas;
+    public Professor() {
+    }
+
+    Professor(String nome, String funcao, double salario, int disciplinas) {
+        super(nome, funcao, salario);
+        this.disciplinas = disciplinas;
+    }
+
+    public int getDisciplinas() {
+        if (this.disciplinas >= 2) {
+            return this.disciplinas;
+        } else {
+            return disciplinas = 0;
+        }
+    }
+
+    public void setDisciplinas(int disciplinas) {
+        this.disciplinas = disciplinas;
+    }
+
+    @Override
+    public double aumentarSalario() {
+        double novoSalario = (salario + (salario * (por / 100))) + getDisciplinas() * 100;
+        return novoSalario;
+    }
+
+    @Override
+    public void exibir() {
+        System.out.println("Nome: " + getNome());
+        System.out.println("Função: " + getFuncao());
+        System.out.println("Salario:" + getSalario());
+        System.out.println("Nº de Disciplinas: " + getDisciplinas());
+    }
+}
