@@ -1,0 +1,32 @@
+package Segunda_Questao;
+public class Transporte {
+    protected String marca;
+    protected String modelo;
+    protected double quilometragem = 0;
+    protected double capacidadeTanque = 0;
+
+    Transporte() {
+    }
+
+    Transporte(String marca, String modelo, double quilometragem, double capacidadeTanque) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.quilometragem = quilometragem;
+        this.capacidadeTanque = capacidadeTanque;
+    }
+
+    public void moverSe(double km){
+        this.quilometragem = quilometragem + km;
+    }
+
+    public void abastecer(double litros) {
+        this.capacidadeTanque = capacidadeTanque + litros;
+    }
+
+    public void exibir() {
+        System.out.println("Marca: " + marca);
+        System.out.println("Modelo: " + modelo);
+        System.out.println("Quilometragem: " + quilometragem);
+        System.out.println("Capacidade do Tanque: " + capacidadeTanque);
+    }
+}
