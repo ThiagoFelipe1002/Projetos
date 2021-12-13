@@ -1,0 +1,46 @@
+package Segunda_Questao;
+public class Avião extends Transporte {
+    private String codigo;
+
+    Avião() {
+    }
+
+    Avião(String marca, String modelo, int quilometragem, double capacidadeTanque, String codigo) {
+        super(marca, modelo, quilometragem, capacidadeTanque);
+        this.codigo = codigo;
+    }
+
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
+
+    @Override
+    public void moverSe(double km) {
+        if (km <= (int) capacidadeTanque * 8) {
+            this.quilometragem = quilometragem + km;
+        }else {
+            this.quilometragem = quilometragem;
+        }
+        if (km > (int) capacidadeTanque * 10) {
+            this.capacidadeTanque = capacidadeTanque;
+            System.out.println("Veículo com combustível insuficiente para o percurso. Favor abasteça.");
+        }else {
+            if (km > 0) {
+                this.capacidadeTanque = capacidadeTanque - (int) km / 10;
+            }
+        }
+    }
+
+    @Override
+    public void exibir() {
+        System.out.println("Marca: " + marca);
+        System.out.println("Modelo: " + modelo);
+        System.out.println("Quilometragem: " + quilometragem);
+        System.out.println("Capacidade do Tanque: " + capacidadeTanque);
+        System.out.println("Placa do Automóvel: " + getCodigo());
+    }
+}
