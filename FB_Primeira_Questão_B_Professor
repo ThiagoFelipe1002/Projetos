@@ -1,4 +1,4 @@
-package Primeira_Questão;
+package Primeira_Questao;
 public class Professor extends Funcionario {
     int disciplinas;
     public Professor() {
