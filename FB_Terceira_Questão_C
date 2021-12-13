@@ -1,0 +1,24 @@
+package Primeira_Questão;
+public class Escola {
+    public static void main(String[] args) {
+        Funcionario f1 = new Funcionario();
+        Professor p1 = new Professor();
+
+        f1.setNome("Jeannie Silva");
+        f1.setFuncao("Funcionária");
+        f1.setSalario(2000);
+        f1.setPor(10);
+        f1.aumentarSalario();
+        f1.exibir();
+
+        System.out.println("__________________________________");
+
+        p1.setNome("Thiago Felipe");
+        p1.setFuncao("Professor");
+        p1.setSalario(5000);
+        p1.setPor(10);
+        p1.setDisciplinas(5);
+        p1.aumentarSalario();
+        p1.exibir();
+    }
+}
