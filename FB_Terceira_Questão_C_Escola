@@ -1,4 +1,4 @@
-package Primeira_Questão;
+package Primeira_Questao;
 public class Escola {
     public static void main(String[] args) {
         Funcionario f1 = new Funcionario();
