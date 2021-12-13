@@ -1,4 +1,4 @@
-package Primeira_Questão;
+package Primeira_Questao;
 public class Funcionario {
     private String nome;
     private String funcao;
@@ -6,13 +6,13 @@ public class Funcionario {
     private static int numFuncionarios;
     public double por;
 
-    Funcionario(){
+    Funcionario() {
     }
 
     Funcionario(String nome, String funcao, double salario) {
         this.nome = nome;
         this.funcao = funcao;
-        this.salario = 0;
+        this.salario = salario;
     }
 
     public String getNome() {
@@ -40,7 +40,7 @@ public class Funcionario {
     }
 
     public double getPor() {
-        return por;
+        return this.por;
     }
 
     public void setPor(double por) {
