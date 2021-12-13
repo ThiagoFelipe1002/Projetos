@@ -12,7 +12,7 @@
 \\            Métodos set e get para o acesso às variáveis;
 \\            aumentarSalario, que recebe um percentual de aumento e faz o cálculo;
 \\            exibir, para a visualização dos valores das variáveis de instância;
-
+\\__________________________________________________________________________________________________________________________
 
 package Primeira_Questão;
 public class Funcionario {
