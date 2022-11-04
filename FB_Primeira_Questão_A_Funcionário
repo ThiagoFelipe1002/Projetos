@@ -55,6 +55,6 @@ public class Funcionario {
     public void exibir() {
         System.out.println("Nome: " + getNome());
         System.out.println("Função: " + getFuncao());
-        System.out.println("Salario:" + getSalario());
+        System.out.println("Salario: " + getSalario());
     }
 }
